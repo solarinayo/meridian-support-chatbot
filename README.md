@@ -90,14 +90,14 @@ stateDiagram-v2
 
 ## Tech stack
 
-| Layer | Technology |
-|--------|------------|
-| UI | React 19, Next.js 16 App Router, Tailwind CSS 4 |
-| API | Route handlers only; no browser exposure of keys |
-| LLM | OpenRouter (`OPENROUTER_BASE_URL`), OpenAI-compatible client |
-| Tools | `@modelcontextprotocol/sdk` streamable HTTP to `MCP_URL` |
-| Safety | Input/output guardrails, structured JSON logs |
-| Deploy | Vercel (`vercel.json`), Docker / HF Space (`Dockerfile`) |
+| Layer  | Technology                                                   |
+| ------ | ------------------------------------------------------------ |
+| UI     | React 19, Next.js 16 App Router, Tailwind CSS 4              |
+| API    | Route handlers only; no browser exposure of keys             |
+| LLM    | OpenRouter (`OPENROUTER_BASE_URL`), OpenAI-compatible client |
+| Tools  | `@modelcontextprotocol/sdk` streamable HTTP to `MCP_URL`     |
+| Safety | Input/output guardrails, structured JSON logs                |
+| Deploy | Vercel (`vercel.json`), Docker / HF Space (`Dockerfile`)     |
 
 ---
 
@@ -137,11 +137,11 @@ npm run dev
 
 ## Deploy
 
-| Target | Notes |
-|--------|--------|
-| **Vercel** | Project root can be repo root or `frontend/`; set env vars to match `.env.example`. See `vercel.json` for install/build overrides if needed. |
-| **Docker / HF** | Repo-root `Dockerfile`; pass the same env vars; default listen `7860`. |
+| Target          | Notes                                                                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Vercel**      | Project root can be repo root or `frontend/`; set env vars to match `.env.example`. See `vercel.json` for install/build overrides if needed. |
+| **Docker / HF** | Repo-root `Dockerfile`; pass the same env vars; default listen `7860`.                                                                       |
 
 ---
 
-Built by Ayomide Solarinayo.
+Built by Ayomide Solarin.
